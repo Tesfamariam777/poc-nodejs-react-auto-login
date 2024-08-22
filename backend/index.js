@@ -8,7 +8,7 @@ dotenv.config();
 const app = express();
 app.use(express.json());
 app.use(cors({
-    origin: 'https://poc-nodejs-react-auto-login.vercel.app' // Allow only this origin
+    origin: '*' //
   }));
 const PORT = process.env.PORT || 5000;
 

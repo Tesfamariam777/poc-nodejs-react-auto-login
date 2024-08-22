@@ -12,10 +12,11 @@ app.use(cors({
   }));
 const PORT = process.env.PORT || 5000;
 
-app.get('/generate-token', (req, res) => {
+app.get('/login', (req, res) => {
     const payload = {
-        userId: '123456',
-        username: 'userName'
+        id: 1,
+        username: 'johndoe',
+        email: 'john@example.com'
     }
     const token = jwt.sign(payload,process.env.JWT_SECRET, {expiresIn: '1hr'});
     res.json({token});

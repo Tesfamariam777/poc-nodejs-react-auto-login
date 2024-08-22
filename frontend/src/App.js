@@ -22,7 +22,7 @@ function App() {
     borderRadius: '8px',         // Rounded corners
     cursor: 'pointer',           // Pointer cursor on hover
     display: 'block',            // Make the button block-level element
-    margin: '0 auto',            // Center the button horizontally
+    margin: 'auto auto',            // Center the button horizontally
     textAlign: 'center',         // Ensure text is centered
   };
   return (

@@ -20,6 +20,7 @@ app.get('/generate-token', (req, res) => {
     const token = jwt.sign(payload,process.env.JWT_SECRET, {expiresIn: '1hr'});
     res.json({token});
 })
+app.options('*', cors());
 
 app.listen(PORT, () => {
     console.log(`Server is running on port ${PORT}`);

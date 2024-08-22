@@ -13,9 +13,23 @@ function App() {
       console.log('error generating token',error);
     }
   }
+  const buttonStyle = {
+    padding: '20px 40px',        // Large padding for a bigger button
+    fontSize: '20px',            // Increase font size
+    backgroundColor: '#007BFF',  // Blue background color
+    color: '#FFFFFF',            // White text color
+    border: 'none',              // Remove default border
+    borderRadius: '8px',         // Rounded corners
+    cursor: 'pointer',           // Pointer cursor on hover
+    display: 'block',            // Make the button block-level element
+    margin: '0 auto',            // Center the button horizontally
+    textAlign: 'center',         // Ensure text is centered
+  };
   return (
     <div className="App">
-      <button onClick={handleBookClick}>Book</button>
+      <button style={buttonStyle} onClick={handleBookClick}>
+      Book
+    </button>
     </div>
   );
 }

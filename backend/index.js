@@ -8,7 +8,7 @@ dotenv.config();
 const app = express();
 app.use(express.json());
 app.use(cors({
-    origin: '*'
+    origin: 'https://poc-nodejs-react-auto-login.vercel.app' // Allow only this origin
   }));
 const PORT = process.env.PORT || 5000;
 
@@ -20,7 +20,6 @@ app.get('/generate-token', (req, res) => {
     const token = jwt.sign(payload,process.env.JWT_SECRET, {expiresIn: '1hr'});
     res.json({token});
 })
-app.options('*', cors());
 
 app.listen(PORT, () => {
     console.log(`Server is running on port ${PORT}`);

@@ -2,7 +2,7 @@ import config from "./config/config";
 function App() {
   const handleBookClick = async () => {
     try {
-      const response = await fetch(`${config.API_URL}/generate-token`);
+      const response = await fetch(`${config.API_URL}/token`);
       const data = await response.json();
       const token = data.token;
 

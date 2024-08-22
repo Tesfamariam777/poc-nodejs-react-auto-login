@@ -54,3 +54,4 @@ Thumbs.db
 
 # Exclude test-related files (if any)
 test/
+.vercel

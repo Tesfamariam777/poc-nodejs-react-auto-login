@@ -21,8 +21,7 @@ function App() {
     border: 'none',              // Remove default border
     borderRadius: '8px',         // Rounded corners
     cursor: 'pointer',           // Pointer cursor on hover
-    display: 'block',            // Make the button block-level element
-    margin: 'auto auto',            // Center the button horizontally
+    display: 'block',            // Make the button block-level elemen          
     textAlign: 'center',         // Ensure text is centered
   };
   return (
